@@ -56,5 +56,11 @@
   <ItemGroup>
     <LibraryProjectZip Include="Jars\jwplayer-core-2.7.4+22.aar" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Naxam.JWPlayerCommon.Droid\Naxam.JWPlayerCommon.Droid.csproj">
+      <Project>{5DD46BD4-E730-4C19-80D2-3A8D40E5AA34}</Project>
+      <Name>Naxam.JWPlayerCommon.Droid</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
 </Project>

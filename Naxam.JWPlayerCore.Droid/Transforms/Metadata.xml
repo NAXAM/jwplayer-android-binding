@@ -11,8 +11,7 @@
 	<remove-node path="/api/package[@name='com.longtailvideo.jwplayer.core.b']" />
 	<remove-node path="/api/package[@name='com.longtailvideo.jwplayer.core.c']" />
 	<remove-node path="/api/package[@name='com.longtailvideo.jwplayer.core.d']" />
-    <remove-node path="/api/package[@name='com.longtailvideo.jwplayer.core']" />
-	
+	<remove-node path="/api/package[@name='com.longtailvideo.jwplayer.core']" />
 	<attr path="/api/package[@name='com.google.android.exoplayer']/class[@name='TrackRenderer']/method[@name='getFormat' and count(parameter)=1 and parameter[1][@type='int']]" name="visibility">public</attr>
 	<attr path="/api/package[@name='com.google.android.exoplayer']/class[@name='SampleSourceTrackRenderer']/method[@name='getFormat' and count(parameter)=1 and parameter[1][@type='int']]" name="visibility">public</attr>
 	<attr path="/api/package[@name='com.google.android.exoplayer']/class[@name='DummyTrackRenderer']/method[@name='getFormat' and count(parameter)=1 and parameter[1][@type='int']]" name="visibility">public</attr>
@@ -54,4 +53,14 @@
 	<attr path="/api/package[@name='com.google.android.exoplayer.text.webvtt']/class[@name='Mp4WebvttParser']/method[@name='parse' and count(parameter)=3 and parameter[1][@type='byte[]'] and parameter[2][@type='int'] and parameter[3][@type='int']]" name="managedReturn">Com.Google.Android.Exoplayer.Text.ISubtitle</attr>
 	<attr path="/api/package[@name='com.google.android.exoplayer.text.webvtt']/class[@name='WebvttParser']/method[@name='parse' and count(parameter)=3 and parameter[1][@type='byte[]'] and parameter[2][@type='int'] and parameter[3][@type='int']]" name="managedReturn">Com.Google.Android.Exoplayer.Text.ISubtitle</attr>
 	<attr path="/api/package[@name='com.google.android.exoplayer.text.webvtt']/class[@name='WebvttCue']" name="visibility">public</attr>
+	<add-node path="/api/package[@name='com.longtailvideo.jwplayer']">
+		<!--<interface abstract="true" deprecated="not deprecated" final="false" name="JWPlayerView.Listener" static="true" visibility="public">
+			<method abstract="true" deprecated="not deprecated" final="false" name="onPause" native="false" return="void" static="false" synchronized="false" visibility="public">
+			</method>
+			<method abstract="true" deprecated="not deprecated" final="false" name="onResume" native="false" return="void" static="false" synchronized="false" visibility="public">
+            </method>
+            <method abstract="true" deprecated="not deprecated" final="false" name="onSetupStarted" native="false" return="void" static="false" synchronized="false" visibility="public">
+            </method>
+		</interface>-->
+	</add-node>
 </metadata>
