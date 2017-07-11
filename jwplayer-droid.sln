@@ -1,0 +1,34 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Naxam.JWPlayerCore.Droid", "Naxam.JWPlayerCore.Droid\Naxam.JWPlayerCore.Droid.csproj", "{82F56E70-A345-4C61-A013-BA73BE3A911F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "demo", "demo", "{22F93BDB-03C9-4A6D-BD37-AA758AF18A40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JWPlayerQs", "demo\JWPlayerQs\JWPlayerQs.csproj", "{F71F201C-A17E-40FE-9096-E9E357B429F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Naxam.JWPlayerCommon.Droid", "Naxam.JWPlayerCommon.Droid\Naxam.JWPlayerCommon.Droid.csproj", "{5DD46BD4-E730-4C19-80D2-3A8D40E5AA34}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{82F56E70-A345-4C61-A013-BA73BE3A911F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82F56E70-A345-4C61-A013-BA73BE3A911F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82F56E70-A345-4C61-A013-BA73BE3A911F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82F56E70-A345-4C61-A013-BA73BE3A911F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F71F201C-A17E-40FE-9096-E9E357B429F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F71F201C-A17E-40FE-9096-E9E357B429F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F71F201C-A17E-40FE-9096-E9E357B429F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F71F201C-A17E-40FE-9096-E9E357B429F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DD46BD4-E730-4C19-80D2-3A8D40E5AA34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DD46BD4-E730-4C19-80D2-3A8D40E5AA34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DD46BD4-E730-4C19-80D2-3A8D40E5AA34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DD46BD4-E730-4C19-80D2-3A8D40E5AA34}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F71F201C-A17E-40FE-9096-E9E357B429F1} = {22F93BDB-03C9-4A6D-BD37-AA758AF18A40}
+	EndGlobalSection
+EndGlobal

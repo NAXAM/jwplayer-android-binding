@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+	<remove-node path="/api/package[@name='com.google.android.exoplayer.metadata.id3']/class[@name='Id3Parser']" />
+	<remove-node path="/api/package[@name='com.longtailvideo.jwplayer.a']" />
+	<remove-node path="/api/package[@name='com.longtailvideo.jwplayer.b']" />
+	<remove-node path="/api/package[@name='com.longtailvideo.jwplayer.c']" />
+	<remove-node path="/api/package[@name='com.longtailvideo.jwplayer.d']" />
+	<remove-node path="/api/package[@name='com.longtailvideo.jwplayer.e']" />
+	<remove-node path="/api/package[@name='com.longtailvideo.jwplayer.e.a']" />
+	<remove-node path="/api/package[@name='com.longtailvideo.jwplayer.core.a']" />
+	<remove-node path="/api/package[@name='com.longtailvideo.jwplayer.core.b']" />
+	<remove-node path="/api/package[@name='com.longtailvideo.jwplayer.core.c']" />
+	<remove-node path="/api/package[@name='com.longtailvideo.jwplayer.core.d']" />
+    <remove-node path="/api/package[@name='com.longtailvideo.jwplayer.core']" />
+	
+	<attr path="/api/package[@name='com.google.android.exoplayer']/class[@name='TrackRenderer']/method[@name='getFormat' and count(parameter)=1 and parameter[1][@type='int']]" name="visibility">public</attr>
+	<attr path="/api/package[@name='com.google.android.exoplayer']/class[@name='SampleSourceTrackRenderer']/method[@name='getFormat' and count(parameter)=1 and parameter[1][@type='int']]" name="visibility">public</attr>
+	<attr path="/api/package[@name='com.google.android.exoplayer']/class[@name='DummyTrackRenderer']/method[@name='getFormat' and count(parameter)=1 and parameter[1][@type='int']]" name="visibility">public</attr>
+	<attr path="/api/package[@name='com.google.android.exoplayer']/class[@name='MediaCodecTrackRenderer']/method[@name='isEnded' and count(parameter)=0]" name="visibility">public</attr>
+	<attr path="/api/package[@name='com.google.android.exoplayer']/class[@name='MediaCodecTrackRenderer']/method[@name='isReady' and count(parameter)=0]" name="visibility">public</attr>
+	<attr path="/api/package[@name='com.google.android.exoplayer']/class[@name='MediaCodecTrackRenderer']/method[@name='doSomeWork' and count(parameter)=3 and parameter[1][@type='long'] and parameter[2][@type='long'] and parameter[3][@type='boolean']]" name="visibility">public</attr>
+	<attr path="/api/package[@name='com.google.android.exoplayer']/class[@name='MediaCodecTrackRenderer']/method[@name='onDiscontinuity' and count(parameter)=1 and parameter[1][@type='long']]" name="visibility">public</attr>
+	<attr path="/api/package[@name='com.google.android.exoplayer']/class[@name='MediaCodecTrackRenderer']/method[@name='handlesTrack' and count(parameter)=1 and parameter[1][@type='com.google.android.exoplayer.MediaFormat']]" name="visibility">public</attr>
+	<attr path="/api/package[@name='com.google.android.exoplayer.metadata']/class[@name='MetadataTrackRenderer']/method[@name='getBufferedPositionUs' and count(parameter)=0]" name="visibility">public</attr>
+	<attr path="/api/package[@name='com.google.android.exoplayer.metadata']/class[@name='MetadataTrackRenderer']/method[@name='isEnded' and count(parameter)=0]" name="visibility">public</attr>
+	<attr path="/api/package[@name='com.google.android.exoplayer.metadata']/class[@name='MetadataTrackRenderer']/method[@name='isReady' and count(parameter)=0]" name="visibility">public</attr>
+	<attr path="/api/package[@name='com.google.android.exoplayer.metadata']/class[@name='MetadataTrackRenderer']/method[@name='doSomeWork' and count(parameter)=3 and parameter[1][@type='long'] and parameter[2][@type='long'] and parameter[3][@type='boolean']]" name="visibility">public</attr>
+	<attr path="/api/package[@name='com.google.android.exoplayer.metadata']/class[@name='MetadataTrackRenderer']/method[@name='onDiscontinuity' and count(parameter)=1 and parameter[1][@type='long']]" name="visibility">public</attr>
+	<attr path="/api/package[@name='com.google.android.exoplayer.metadata']/class[@name='MetadataTrackRenderer']/method[@name='handlesTrack' and count(parameter)=1 and parameter[1][@type='com.google.android.exoplayer.MediaFormat']]" name="visibility">public</attr>
+	<attr path="/api/package[@name='com.google.android.exoplayer.text']/class[@name='TextTrackRenderer']/method[@name='getBufferedPositionUs' and count(parameter)=0]" name="visibility">public</attr>
+	<attr path="/api/package[@name='com.google.android.exoplayer.text']/class[@name='TextTrackRenderer']/method[@name='isEnded' and count(parameter)=0]" name="visibility">public</attr>
+	<attr path="/api/package[@name='com.google.android.exoplayer.text']/class[@name='TextTrackRenderer']/method[@name='isReady' and count(parameter)=0]" name="visibility">public</attr>
+	<attr path="/api/package[@name='com.google.android.exoplayer.text']/class[@name='TextTrackRenderer']/method[@name='doSomeWork' and count(parameter)=3 and parameter[1][@type='long'] and parameter[2][@type='long'] and parameter[3][@type='boolean']]" name="visibility">public</attr>
+	<attr path="/api/package[@name='com.google.android.exoplayer.text']/class[@name='TextTrackRenderer']/method[@name='onDiscontinuity' and count(parameter)=1 and parameter[1][@type='long']]" name="visibility">public</attr>
+	<attr path="/api/package[@name='com.google.android.exoplayer.text']/class[@name='TextTrackRenderer']/method[@name='handlesTrack' and count(parameter)=1 and parameter[1][@type='com.google.android.exoplayer.MediaFormat']]" name="visibility">public</attr>
+	<attr path="/api/package[@name='com.google.android.exoplayer.text.eia608']/class[@name='Eia608TrackRenderer']/method[@name='getBufferedPositionUs' and count(parameter)=0]" name="visibility">public</attr>
+	<attr path="/api/package[@name='com.google.android.exoplayer.text.eia608']/class[@name='Eia608TrackRenderer']/method[@name='isEnded' and count(parameter)=0]" name="visibility">public</attr>
+	<attr path="/api/package[@name='com.google.android.exoplayer.text.eia608']/class[@name='Eia608TrackRenderer']/method[@name='isReady' and count(parameter)=0]" name="visibility">public</attr>
+	<attr path="/api/package[@name='com.google.android.exoplayer.text.eia608']/class[@name='Eia608TrackRenderer']/method[@name='doSomeWork' and count(parameter)=3 and parameter[1][@type='long'] and parameter[2][@type='long'] and parameter[3][@type='boolean']]" name="visibility">public</attr>
+	<attr path="/api/package[@name='com.google.android.exoplayer.text.eia608']/class[@name='Eia608TrackRenderer']/method[@name='onDiscontinuity' and count(parameter)=1 and parameter[1][@type='long']]" name="visibility">public</attr>
+	<attr path="/api/package[@name='com.google.android.exoplayer.text.eia608']/class[@name='Eia608TrackRenderer']/method[@name='handlesTrack' and count(parameter)=1 and parameter[1][@type='com.google.android.exoplayer.MediaFormat']]" name="visibility">public</attr>
+	<attr path="/api/package[@name='com.google.android.exoplayer']/class[@name='DummyTrackRenderer']/method[@name='isEnded' and count(parameter)=0]" name="visibility">public</attr>
+	<attr path="/api/package[@name='com.google.android.exoplayer']/class[@name='DummyTrackRenderer']/method[@name='isReady' and count(parameter)=0]" name="visibility">public</attr>
+	<attr path="/api/package[@name='com.google.android.exoplayer']/class[@name='DummyTrackRenderer']/method[@name='getBufferedPositionUs' and count(parameter)=0]" name="visibility">public</attr>
+	<attr path="/api/package[@name='com.google.android.exoplayer.extractor']/class[@name='DefaultTrackOutput']/method[@name='getFormat' and count(parameter)=0]" name="propertyName">MediaFormat</attr>
+	<attr path="/api/package[@name='com.google.android.exoplayer.chunk']/class[@name='InitializationChunk']/method[@name='getFormat' and count(parameter)=0]" name="propertyName">MediaFormat</attr>
+	<attr path="/api/package[@name='com.google.android.exoplayer.chunk']/class[@name='InitializationChunk']/method[@name='getSeekMap' and count(parameter)=0]" name="propertyName">SeekMapValue</attr>
+	<attr path="/api/package[@name='com.google.android.exoplayer.chunk']/class[@name='BaseMediaChunk']/method[@name='getDrmInitData' and count(parameter)=0]" name="propertyName">DrmInitDataValue</attr>
+	<attr path="/api/package[@name='com.google.android.exoplayer.chunk']/class[@name='SingleSampleMediaChunk']/method[@name='getDrmInitData' and count(parameter)=0]" name="propertyName">DrmInitDataValue</attr>
+	<attr path="/api/package[@name='com.google.android.exoplayer.chunk']/class[@name='ContainerMediaChunk']/method[@name='getDrmInitData' and count(parameter)=0]" name="propertyName">DrmInitDataValue</attr>
+	<attr path="/api/package[@name='com.google.android.exoplayer.chunk']/class[@name='InitializationChunk']/method[@name='getDrmInitData' and count(parameter)=0]" name="propertyName">DrmInitDataValue</attr>
+	<attr path="/api/package[@name='com.google.android.exoplayer.text.subrip']/class[@name='SubripParser']/method[@name='parse' and count(parameter)=3 and parameter[1][@type='byte[]'] and parameter[2][@type='int'] and parameter[3][@type='int']]" name="managedReturn">Com.Google.Android.Exoplayer.Text.ISubtitle</attr>
+	<attr path="/api/package[@name='com.google.android.exoplayer.text.ttml']/class[@name='TtmlParser']/method[@name='parse' and count(parameter)=3 and parameter[1][@type='byte[]'] and parameter[2][@type='int'] and parameter[3][@type='int']]" name="managedReturn">Com.Google.Android.Exoplayer.Text.ISubtitle</attr>
+	<attr path="/api/package[@name='com.google.android.exoplayer.text.webvtt']/class[@name='Mp4WebvttParser']/method[@name='parse' and count(parameter)=3 and parameter[1][@type='byte[]'] and parameter[2][@type='int'] and parameter[3][@type='int']]" name="managedReturn">Com.Google.Android.Exoplayer.Text.ISubtitle</attr>
+	<attr path="/api/package[@name='com.google.android.exoplayer.text.webvtt']/class[@name='WebvttParser']/method[@name='parse' and count(parameter)=3 and parameter[1][@type='byte[]'] and parameter[2][@type='int'] and parameter[3][@type='int']]" name="managedReturn">Com.Google.Android.Exoplayer.Text.ISubtitle</attr>
+	<attr path="/api/package[@name='com.google.android.exoplayer.text.webvtt']/class[@name='WebvttCue']" name="visibility">public</attr>
+</metadata>
