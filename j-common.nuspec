@@ -12,6 +12,7 @@
         <releaseNotes>JWPlayer Android SDK - Common v2.7.4+22</releaseNotes>
         <summary>Xamarin Binding Library - JWPlayer Android SDK - Common</summary>
         <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
+        <iconUrl>https://avatars2.githubusercontent.com/u/5090060?v=3&s=200</url>
         <projectUrl>https://github.com/NAXAM/jwplayer-android-binding/Naxam.JWPlayerCommon.Droid</projectUrl>
         <copyright>Copyright (c) 2017 NAXAM</copyright>
         <tags>Xamarin.Android, jwplayer, mediaplayer, android-mediaplayer</tags>
