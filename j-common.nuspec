@@ -3,7 +3,7 @@
     <metadata>
         <!-- Required elements-->
         <id>Naxam.JWPlayerCommon.Droid</id>
-        <version>2.7.4.1</version>
+        <version>2.7.4.2</version>
         <description>Xamarin Binding Library - JWPlayer Android SDK - Common</description>
         <authors>NAXAM</authors>
         <owners>NAXAM CO.,LTD</owners>
