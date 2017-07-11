@@ -2,13 +2,23 @@
 using Android.Widget;
 using Android.OS;
 using Android.Support.V7.App;
+using Com.Longtailvideo.Jwplayer;
+using Com.Longtailvideo.Jwplayer.Media.Playlists;
+using Com.Longtailvideo.Jwplayer.Events.Listeners;
+using System;
+using Android.Content.Res;
+using Android.Views;
+using Android.Content.PM;
 
 namespace JWPlayerQs
 {
-    [Activity(Label = "JWPlayerQs", MainLauncher = true, Icon = "@mipmap/ic_launcher", Theme = "@style/MyTheme")]
-    public class MainActivity : AppCompatActivity
+    [Activity(Label = "JWPlayerQs", MainLauncher = true, Icon = "@mipmap/ic_launcher", Theme = "@style/MyTheme", ConfigurationChanges = ConfigChanges.Keyboard | ConfigChanges.KeyboardHidden | ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
+    public class MainActivity : AppCompatActivity, IVideoPlayerEventsOnFullscreenListener
     {
-        int count = 1;
+        JWPlayerView mPlayerView;
+        private JWEventHandler mEventHandler;
+
+
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -17,12 +27,86 @@ namespace JWPlayerQs
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
 
-            // Get our button from the layout resource,
-            // and attach an event to it
-            Button button = FindViewById<Button>(Resource.Id.myButton);
+            mPlayerView = FindViewById<JWPlayerView>(Resource.Id.jwplayer);
+            TextView outputTextView = FindViewById<TextView>(Resource.Id.output);
+            // Handle hiding/showing of ActionBar
+            mPlayerView.AddOnFullscreenListener(this);
 
-            button.Click += delegate { button.Text = $"{count++} clicks!"; };
+            // Instantiate the JW Player event handler class
+            mEventHandler = new JWEventHandler(mPlayerView, outputTextView);
+
+            // Load a media source
+            PlaylistItem pi = new PlaylistItem("http://playertest.longtailvideo.com/adaptive/bipbop/gear4/prog_index.m3u8");
+            mPlayerView.Load(pi);
         }
+
+
+        public override void OnConfigurationChanged(Configuration newConfig)
+        {
+            // Set fullscreen when the device is rotated to landscape
+            mPlayerView.SetFullscreen(newConfig.Orientation == Android.Content.Res.Orientation.Landscape, true);
+            base.OnConfigurationChanged(newConfig);
+        }
+
+
+        protected override void OnResume()
+        {
+            // Let JW Player know that the app has returned from the background
+            mPlayerView.OnResume();
+            base.OnResume();
+        }
+
+        protected override void OnPause()
+        {
+            mPlayerView.OnPause();
+            base.OnPause();
+        }
+
+
+        protected override void OnDestroy()
+        {
+            // Let JW Player know that the app is being destroyed
+            mPlayerView.OnDestroy();
+            base.OnDestroy();
+        }
+
+
+        public override bool OnKeyDown(Keycode keyCode, KeyEvent events)
+        {
+            // Exit fullscreen when the user pressed the Back button
+            if (keyCode == Keycode.Back)
+            {
+                if (mPlayerView.Fullscreen)
+                {
+                    mPlayerView.SetFullscreen(false, true);
+                    return false;
+                }
+            }
+            return base.OnKeyDown(keyCode, events);
+        }
+
+        public void OnFullscreen(bool fullscreen)
+        {
+            Android.Support.V7.App.ActionBar actionBar = SupportActionBar;
+            if (actionBar != null)
+            {
+                if (fullscreen)
+                {
+                    actionBar.Hide();
+                }
+                else
+                {
+                    actionBar.Show();
+                }
+            }
+        }
+
+        public override bool OnCreateOptionsMenu(IMenu menu)
+        {
+            // MenuInflater.Inflate(Resource.m, menu); 
+            return true;
+        }
+
     }
 }
 
