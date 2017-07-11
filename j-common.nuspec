@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <!-- Required elements-->
+        <id>Naxam.JWPlayerCommon.Droid</id>
+        <version>2.7.4</version>
+        <description>Xamarin Binding Library - JWPlayer Android SDK - Common</description>
+        <authors>NAXAM</authors>
+        <owners>NAXAM CO.,LTD</owners>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <title>NAXAM - JWPlayer Android SDK - Common</title>
+        <releaseNotes>JWPlayer Android SDK - Common v2.7.4+22</releaseNotes>
+        <summary>Xamarin Binding Library - JWPlayer Android SDK - Common</summary>
+        <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
+        <projectUrl>https://github.com/NAXAM/jwplayer-android-binding/Naxam.JWPlayerCommon.Droid</projectUrl>
+        <copyright>Copyright (c) 2017 NAXAM</copyright>
+        <tags>Xamarin.Android, jwplayer, mediaplayer, android-mediaplayer</tags>
+        <dependencies>
+            <dependency id="Naxam.JWPlayerCore.Droid" version="2.7.2" />
+        </dependencies>
+    </metadata>
+    <!-- Optional 'files' node -->
+    <files>
+        <file src="Naxam.JWPlayerCommon.Droid/bin/Release/Naxam.JWPlayerCommon.Droid.dll" target="lib/MonoAndroid10/Naxam.JWPlayerCommon.Droid.dll" />
+    </files>
+</package>
