@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.15
+VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Naxam.JWPlayerCore.Droid", "Naxam.JWPlayerCore.Droid\Naxam.JWPlayerCore.Droid.csproj", "{82F56E70-A345-4C61-A013-BA73BE3A911F}"
 EndProject
@@ -9,6 +9,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JWPlayerQs", "demo\JWPlayerQs\JWPlayerQs.csproj", "{F71F201C-A17E-40FE-9096-E9E357B429F1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Naxam.JWPlayerCommon.Droid", "Naxam.JWPlayerCommon.Droid\Naxam.JWPlayerCommon.Droid.csproj", "{5DD46BD4-E730-4C19-80D2-3A8D40E5AA34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Naxam.JWPlayerChromeCast.Droid", "Naxam.JWPlayerChromeCast.Droid\Naxam.JWPlayerChromeCast.Droid.csproj", "{5422CBDE-EB2E-4827-922C-E08D945DA4F4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +31,10 @@ Global
 		{5DD46BD4-E730-4C19-80D2-3A8D40E5AA34}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5DD46BD4-E730-4C19-80D2-3A8D40E5AA34}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5DD46BD4-E730-4C19-80D2-3A8D40E5AA34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5422CBDE-EB2E-4827-922C-E08D945DA4F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5422CBDE-EB2E-4827-922C-E08D945DA4F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5422CBDE-EB2E-4827-922C-E08D945DA4F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5422CBDE-EB2E-4827-922C-E08D945DA4F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

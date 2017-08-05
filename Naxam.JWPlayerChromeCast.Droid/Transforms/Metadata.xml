@@ -1,0 +1,246 @@
+﻿<metadata>
+  <add-node path="/api/package[@name='com.longtailvideo.jwplayer.cast']">
+    <class abstract="false" deprecated="not deprecated" final="true" name="B" static="false" visibility="public" extends="java.lang.Object" >
+      <implements name="com.google.android.libraries.cast.companionlibrary.cast.callbacks.VideoCastConsumer" name-generic-aware="com.google.android.libraries.cast.companionlibrary.cast.callbacks.VideoCastConsumer"/>
+
+      <constructor deprecated="not deprecated" final="false" name="B" static="false" type="com.longtailvideo.jwplayer.cast.b" visibility="public" />
+
+      <method abstract="false" deprecated="not deprecated" final="false" name="onApplicationConnected" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="com.google.android.gms.cast.ApplicationMetadata">
+        </parameter>
+        <parameter name="p1" type="java.lang.String">
+        </parameter>
+        <parameter name="p2" type="boolean">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onApplicationConnectionFailed" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="int">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onApplicationDisconnected" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="int">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onApplicationStatusChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onApplicationStopFailed" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="int">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onDataMessageReceived" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.String">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onDataMessageSendFailed" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="int">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onMediaLoadResult" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="int">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onMediaQueueOperationResult" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="int">
+        </parameter>
+        <parameter name="p1" type="int">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onMediaQueueUpdated" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.util.List&lt;com.google.android.gms.cast.MediaQueueItem&gt;">
+        </parameter>
+        <parameter name="p1" type="com.google.android.gms.cast.MediaQueueItem">
+        </parameter>
+        <parameter name="p2" type="int">
+        </parameter>
+        <parameter name="p3" type="boolean">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onNamespaceRemoved" native="false" return="void" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onRemoteMediaPlayerMetadataUpdated" native="false" return="void" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onRemoteMediaPlayerStatusUpdated" native="false" return="void" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onRemoteMediaPreloadStatusUpdated" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="com.google.android.gms.cast.MediaQueueItem">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onTextTrackEnabledChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="boolean">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onTextTrackLocaleChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.util.Locale">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onTextTrackStyleChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="com.google.android.gms.cast.TextTrackStyle">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onUpcomingPlayClicked" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.view.View">
+        </parameter>
+        <parameter name="p1" type="com.google.android.gms.cast.MediaQueueItem">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onUpcomingStopClicked" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.view.View">
+        </parameter>
+        <parameter name="p1" type="com.google.android.gms.cast.MediaQueueItem">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onVolumeChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="double">
+        </parameter>
+        <parameter name="p1" type="boolean">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onCastAvailabilityChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="boolean">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onCastDeviceDetected" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.support.v7.media.MediaRouter.RouteInfo">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onConnected" native="false" return="void" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onConnectionFailed" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="com.google.android.gms.common.ConnectionResult">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onConnectionSuspended" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="int">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onConnectivityRecovered" native="false" return="void" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onDeviceSelected" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="com.google.android.gms.cast.CastDevice">
+        </parameter>
+        <parameter name="p1" type="android.support.v7.media.MediaRouter.RouteInfo">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onDisconnected" native="false" return="void" static="false" synchronized="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onDisconnectionReason" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="int">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onFailed" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="int">
+        </parameter>
+        <parameter name="p1" type="int">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onReconnectionStatusChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="int">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onRouteRemoved" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.support.v7.media.MediaRouter.RouteInfo">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onUiVisibilityChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="boolean">
+        </parameter>
+      </method>
+    </class>
+  </add-node>
+
+
+  <add-node path="/api/package[@name='com.longtailvideo.jwplayer.cast']">
+    <class abstract="false" deprecated="not deprecated" final="true" name="CastManager" static="false" visibility="public" extends="java.lang.Object" >
+      <constructor deprecated="not deprecated" final="false" name="CastManager" static="false" type="com.longtailvideo.jwplayer.cast.CastManager" visibility="private"  >
+        <parameter name="p1" type="com.longtailvideo.jwplayer.cast.b"/>
+      </constructor>
+
+      <method abstract="false" deprecated="not deprecated" final="false"  name="getInstance" native="false" return="com.longtailvideo.jwplayer.cast.CastManager" static="true" synchronized="false" visibility="public"/>
+
+
+      <method abstract="false" deprecated="not deprecated" final="false"  name="initialize" native="false" return="void" static="true" synchronized="false" visibility="public">
+        <parameter name="context" type="android.content.Context"/>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false"  name="initialize" native="false" return="void" static="true" synchronized="false" visibility="public">
+        <parameter name="context" type="android.content.Context"/>
+        <parameter name="name" type="String"/>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false"  name="isInitialized" native="false" return="boolean" static="true" synchronized="false" visibility="public"/>
+
+      <method abstract="false" deprecated="not deprecated" final="true"  name="addMediaRouterButton" native="false" return="android.view.MenuItem" static="false" synchronized="false" visibility="public">
+        <parameter name="menu" type="android.view.Menu"/>
+        <parameter name="id" type="int"/>
+      </method>
+
+      <method abstract="false" deprecated="not deprecated" final="true"  name="addMediaRouterButton" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="rButton" type="com.google.android.support.v7.MediaRouteButton"/>
+      </method>
+
+
+      <method abstract="false" deprecated="not deprecated" final="true"  name="incrementUiCounter" native="false" return="void" static="false" synchronized="false" visibility="public"/>
+
+      <method abstract="false" deprecated="not deprecated" final="true"  name="decrementUiCounter" native="false" return="void" static="false" synchronized="false" visibility="public"/>
+
+      <method abstract="false" deprecated="not deprecated" final="true"  name="reconnectSessionIfPossible" native="false" return="void" static="false" synchronized="false" visibility="public"/>
+
+      <method abstract="false" deprecated="not deprecated" final="true"  name="reconnectSessionIfPossible" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="int"/>
+      </method>
+
+      <method abstract="false" deprecated="not deprecated" final="true"  name="getRemoteMediaUrl" native="false" return="String" static="false" synchronized="false" visibility="public"/>
+
+      <method abstract="false" deprecated="not deprecated" final="true"  name="isRemoteMediaPlaying" native="false" return="boolean" static="false" synchronized="false" visibility="public"/>
+
+      <method abstract="false" deprecated="not deprecated" final="true"  name="isRemoteMediaPaused" native="false" return="boolean" static="false" synchronized="false" visibility="public"/>
+
+      <method abstract="false" deprecated="not deprecated" final="true"  name="isRemoteMediaLoaded" native="false" return="boolean" static="false" synchronized="false" visibility="public"/>
+
+      <method abstract="false" deprecated="not deprecated" final="true"  name="isConnected" native="false" return="boolean" static="false" synchronized="false" visibility="public"/>
+
+      <method abstract="false" deprecated="not deprecated" final="true"  name="addDeviceListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="listener" type="com.longtailvideo.jwplayer.cast.CastEvents.DeviceListener"/>
+      </method>
+
+      <method abstract="false" deprecated="not deprecated" final="true"  name="removeDeviceListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="listener" type="com.longtailvideo.jwplayer.cast.CastEvents.DeviceListener"/>
+      </method>
+
+
+      <method abstract="false" deprecated="not deprecated" final="true"  name="addApplicationListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="listener" type="com.longtailvideo.jwplayer.cast.CastEvents.ApplicationListener"/>
+      </method>
+
+      <method abstract="false" deprecated="not deprecated" final="true"  name="removeApplicationListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="listener" type="com.longtailvideo.jwplayer.cast.CastEvents.ApplicationListener"/>
+      </method>
+
+      <method abstract="false" deprecated="not deprecated" final="true"  name="addErrorListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="listener" type="com.longtailvideo.jwplayer.cast.CastEvents.ErrorListener"/>
+      </method>
+
+      <method abstract="false" deprecated="not deprecated" final="true"  name="removeErrorListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="listener" type="com.longtailvideo.jwplayer.cast.CastEvents.ErrorListener"/>
+      </method>
+
+
+      <method abstract="false" deprecated="not deprecated" final="true"  name="addPlayerListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="listener" type="com.longtailvideo.jwplayer.cast.CastEvents.PlayerListener"/>
+      </method>
+
+      <method abstract="false" deprecated="not deprecated" final="true"  name="removePlayerListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="listener" type="com.longtailvideo.jwplayer.cast.CastEvents.PlayerListener"/>
+      </method>
+
+      <method abstract="false" deprecated="not deprecated" final="true"  name="addConnectionListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="listener" type="com.longtailvideo.jwplayer.cast.CastEvents.ConnectionListener"/>
+      </method>
+
+      <method abstract="false" deprecated="not deprecated" final="true"  name="removeConnectionListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="listener" type="com.longtailvideo.jwplayer.cast.CastEvents.ConnectionListener"/>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true"  name="disconnect" native="false" return="void" static="false" synchronized="false" visibility="public"/>
+    </class>
+  </add-node>
+</metadata>

@@ -9,6 +9,8 @@ using System;
 using Android.Content.Res;
 using Android.Views;
 using Android.Content.PM;
+using Com.Longtailvideo.Jwplayer.Cast;
+using Android.Content;
 
 namespace JWPlayerQs
 {
@@ -17,8 +19,8 @@ namespace JWPlayerQs
     {
         JWPlayerView mPlayerView;
         private JWEventHandler mEventHandler;
-
-
+        private CastManager mCastManager;
+        Android.Support.V7.Widget.Toolbar toolbar;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -29,7 +31,9 @@ namespace JWPlayerQs
 
             mPlayerView = FindViewById<JWPlayerView>(Resource.Id.jwplayer);
             TextView outputTextView = FindViewById<TextView>(Resource.Id.output);
+            toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
             // Handle hiding/showing of ActionBar
+            SetSupportActionBar(toolbar);
             mPlayerView.AddOnFullscreenListener(this);
 
             // Instantiate the JW Player event handler class
@@ -38,6 +42,8 @@ namespace JWPlayerQs
             // Load a media source
             PlaylistItem pi = new PlaylistItem("http://playertest.longtailvideo.com/adaptive/bipbop/gear4/prog_index.m3u8");
             mPlayerView.Load(pi);
+            CastManager.Initialize(this);
+            mCastManager = CastManager.Instance;
         }
 
 
@@ -103,8 +109,22 @@ namespace JWPlayerQs
 
         public override bool OnCreateOptionsMenu(IMenu menu)
         {
-            // MenuInflater.Inflate(Resource.m, menu); 
+            MenuInflater.Inflate(Resource.Menu.menu_jwplayerview, menu);
+            mCastManager.AddMediaRouterButton(menu, Resource.Id.media_route_menu_item);
             return true;
+        }
+
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            switch (item.ItemId)
+            {
+                case Resource.Id.switch_to_fragment:
+                    Intent i = new Intent(this, typeof(JWPlayerFragmentExample));
+                    StartActivity(i);
+                    return true;
+                default:
+                    return base.OnOptionsItemSelected(item);
+            }
         }
 
     }

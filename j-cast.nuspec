@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <!-- Required elements-->
+        <id>Naxam.JWPlayerChromeCast.Droid</id>
+        <version>2.7.4.3</version>
+        <description>Xamarin Binding Library - JWPlayer Android SDK - Core</description>
+        <authors>NAXAM</authors>
+        <owners>NAXAM CO.,LTD</owners>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <title>NAXAM - JWPlayer Android SDK - Core</title>
+        <releaseNotes>JWPlayer Android SDK - Core v2.7.4+22</releaseNotes>
+        <summary>Xamarin Binding Library - JWPlayer Android SDK - Core</summary>
+        <iconUrl>https://avatars2.githubusercontent.com/u/5090060?v=3</iconUrl>
+        <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
+        <projectUrl>https://github.com/NAXAM/jwplayer-android-binding/Naxam.JWPlayerChromeCast.Droid</projectUrl>
+        <copyright>Copyright (c) 2017 NAXAM</copyright>
+        <tags>Xamarin.Android, jwplayer, mediaplayer, android-mediaplayer</tags>
+        <dependencies>
+            <dependency id="Naxam.CastCompanionLibrary.Droid" version="2.7.4.3" />
+            <dependency id="Xamarin.Android.Support.v7.AppCompat" version="25.3.1" />
+            <dependency id="Xamarin.Android.Support.v7.MediaRouter" version="25.3.1" />
+            <dependency id="Xamarin.Android.Support.v4" version="25.3.1" />
+        </dependencies>
+    </metadata>
+    <!-- Optional 'files' node -->
+    <files>
+        <file src="Naxam.JWPlayerChromeCast.Droid/bin/Release/Naxam.JWPlayerChromeCast.Droid.dll" target="lib/MonoAndroid10/Naxam.JWPlayerChromeCast.Droid.dll" />
+    </files>
+</package>
