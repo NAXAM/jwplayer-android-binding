@@ -15,6 +15,7 @@ using Com.Longtailvideo.Jwplayer.Configuration;
 
 namespace JWPlayerQs
 {
+    [Activity]
     public class JWPlayerFragmentExample : AppCompatActivity
     {
         private JWPlayerSupportFragment mPlayerFragment;
@@ -42,6 +43,54 @@ namespace JWPlayerQs
             new KeepScreenOnHandler(mPlayerView, Window);
 
             mEventHandler = new JWEventHandler(mPlayerView, outputTextView);
+        }
+        public override bool OnKeyDown(Keycode keyCode, KeyEvent events)
+        {
+            // Exit fullscreen when the user pressed the Back button
+            if (keyCode == Keycode.Back)
+            {
+                if (mPlayerView.Fullscreen)
+                {
+                    mPlayerView.SetFullscreen(false, true);
+                    return false;
+                }
+            }
+            return base.OnKeyDown(keyCode, events);
+        }
+
+        public void OnFullscreen(bool fullscreen)
+        {
+            Android.Support.V7.App.ActionBar actionBar = SupportActionBar;
+            if (actionBar != null)
+            {
+                if (fullscreen)
+                {
+                    actionBar.Hide();
+                }
+                else
+                {
+                    actionBar.Show();
+                }
+            }
+        }
+
+        public override bool OnCreateOptionsMenu(IMenu menu)
+        {
+            MenuInflater.Inflate(Resource.Menu.menu_jwplayerfragment, menu); 
+            return true;
+        }
+
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            switch (item.ItemId)
+            {
+                case Resource.Id.switch_to_view:
+                    Intent i = new Intent(this, typeof(MainActivity));
+                    StartActivity(i);
+                    return true;
+                default:
+                    return base.OnOptionsItemSelected(item);
+            }
         }
     }
 }
