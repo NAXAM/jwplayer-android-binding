@@ -11,6 +11,8 @@ using Android.Views;
 using Android.Content.PM;
 using Com.Longtailvideo.Jwplayer.Cast;
 using Android.Content;
+using Android.Gms.Cast;
+using Android.Support.V7.Media;
 
 namespace JWPlayerQs
 {
@@ -44,8 +46,100 @@ namespace JWPlayerQs
             mPlayerView.Load(pi);
             CastManager.Initialize(this);
             mCastManager = CastManager.Instance;
+            mCastManager.AddDeviceListener(new DeviceListener());
+            mCastManager.AddPlayerListener(new PlayerListener());
+            mCastManager.AddApplicationListener(new ApplicationListener());
+            mCastManager.AddConnectionListener(new ConnectionListener());
+            mCastManager.AddErrorListener(new ErrorListener());
         }
 
+        public class ErrorListener : Java.Lang.Object, ICastEventsErrorListener
+        {
+            public void OnFailed(int p0, int p1)
+            { 
+            }
+        }
+
+        public class ConnectionListener : Java.Lang.Object, ICastEventsConnectionListener
+        {
+            public void OnConnected()
+            {
+                 
+            }
+
+            public void OnConnectionFailed()
+            { 
+            }
+
+            public void OnConnectionSuspended(int p0)
+            { 
+            }
+
+            public void OnConnectivityRecovered()
+            { 
+            }
+
+            public void OnDisconnected()
+            { 
+            }
+        }
+
+        public class ApplicationListener : Java.Lang.Object, ICastEventsApplicationListener
+        {
+            public void OnApplicationConnected(string p0, bool p1)
+            { 
+            }
+
+            public void OnApplicationConnectionFailed(int p0)
+            { 
+            }
+
+            public void OnApplicationDisconnected(int p0)
+            {  
+            }
+
+            public void OnApplicationStatusChanged(string p0)
+            { 
+            }
+
+            public void OnApplicationStopFailed(int p0)
+            { 
+            }
+        }
+
+        public class PlayerListener : Java.Lang.Object, ICastEventsPlayerListener
+        {
+            public void OnMediaLoadResult(int p0)
+            { 
+            }
+
+            public void OnRemoteMediaPlayerMetadataUpdated()
+            { 
+            }
+
+            public void OnRemoteMediaPlayerStatusUpdated()
+            { 
+            }
+
+            public void OnVolumeChanged(double p0, bool p1)
+            { 
+            }
+        }
+
+        public class DeviceListener : Java.Lang.Object,ICastEventsDeviceListener
+        {
+            public void OnCastAvailabilityChanged(bool p0)
+            { 
+            }
+
+            public void OnCastDeviceDetected(MediaRouter.RouteInfo p0)
+            { 
+            }
+
+            public void OnDeviceSelected(CastDevice p0)
+            { 
+            }
+        }
 
         public override void OnConfigurationChanged(Configuration newConfig)
         {

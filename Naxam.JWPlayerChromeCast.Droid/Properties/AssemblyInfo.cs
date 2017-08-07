@@ -7,12 +7,12 @@ using Android.App;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Naxam.JWPlayerChromeCast.Droid")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Xamarin Binding Library - JWPlayer ChromeCast")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Naxam.JWPlayerChromeCast.Droid")]
-[assembly: AssemblyCopyright("Copyright ©  2017")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCompany("NAXAM COMPANY LIMITED")]
+[assembly: AssemblyProduct("X Bindings")]
+[assembly: AssemblyCopyright("Copyright (c) 2017 NAXAM")]
+[assembly: AssemblyTrademark("NAXAM")]
 [assembly: AssemblyCulture("")]
 [assembly: ComVisible(false)]
 
@@ -26,5 +26,5 @@ using Android.App;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyVersion("2.7.5.23")]
+[assembly: AssemblyFileVersion("2.7.5.23")]
