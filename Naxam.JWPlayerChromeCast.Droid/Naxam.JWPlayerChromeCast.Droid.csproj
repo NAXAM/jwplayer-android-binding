@@ -39,9 +39,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Mono.Android" />
-    <Reference Include="Naxam.CastCompanionLibrary.Droid, Version=2.9.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Naxam.CastCompanionLibrary.Droid.2.7.4.3\lib\MonoAndroid10\Naxam.CastCompanionLibrary.Droid.dll</HintPath>
-    </Reference>
     <Reference Include="Naxam.JWPlayerCommon.Droid, Version=2.7.4.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Naxam.JWPlayerCommon.Droid.2.7.4.3\lib\MonoAndroid10\Naxam.JWPlayerCommon.Droid.dll</HintPath>
     </Reference>
@@ -103,6 +100,9 @@
     </Reference>
     <Reference Include="Xamarin.GooglePlayServices.Tasks, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Xamarin.GooglePlayServices.Tasks.42.1021.1\lib\MonoAndroid70\Xamarin.GooglePlayServices.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Naxam.CastCompanionLibrary.Droid">
+      <HintPath>..\packages\Naxam.CastCompanionLibrary.Droid.2.9.1\lib\MonoAndroid10\Naxam.CastCompanionLibrary.Droid.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

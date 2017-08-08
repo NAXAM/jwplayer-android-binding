@@ -1,5 +1,6 @@
-﻿<metadata>
-  <!--<add-node path="/api/package[@name='com.longtailvideo.jwplayer.cast']">
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+	<!--<add-node path="/api/package[@name='com.longtailvideo.jwplayer.cast']">
     <class abstract="false" deprecated="not deprecated" final="true" name="B" static="false" visibility="public" extends="java.lang.Object" >
       <implements name="com.google.android.libraries.cast.companionlibrary.cast.callbacks.VideoCastConsumer" name-generic-aware="com.google.android.libraries.cast.companionlibrary.cast.callbacks.VideoCastConsumer"/>
 
@@ -149,98 +150,66 @@
       </method>
     </class>
   </add-node>-->
-
-
-  <!--<add-node path="/api/package[@name='com.longtailvideo.jwplayer.cast']">
-    <class abstract="false" deprecated="not deprecated" final="true" name="CastManager" static="false" visibility="public" extends="java.lang.Object" >
-      --><!--<constructor deprecated="not deprecated" final="false" name="CastManager" static="false" type="com.longtailvideo.jwplayer.cast.CastManager" visibility="private"  >
-        <parameter name="p1" type="com.longtailvideo.jwplayer.cast.b"/>
-      </constructor>--><!--
-
-      <method abstract="false" deprecated="not deprecated" final="false"  name="getInstance" native="false" return="com.longtailvideo.jwplayer.cast.CastManager" static="true" synchronized="false" visibility="public"/>
-
-
-      <method abstract="false" deprecated="not deprecated" final="false"  name="initialize" native="false" return="void" static="true" synchronized="false" visibility="public">
-        <parameter name="context" type="android.content.Context"/>
-      </method>
-      <method abstract="false" deprecated="not deprecated" final="false"  name="initialize" native="false" return="void" static="true" synchronized="false" visibility="public">
-        <parameter name="context" type="android.content.Context"/>
-        <parameter name="name" type="java.lang.String"/>
-      </method>
-      <method abstract="false" deprecated="not deprecated" final="false"  name="isInitialized" native="false" return="boolean" static="true" synchronized="false" visibility="public"/>
-
-      <method abstract="false" deprecated="not deprecated" final="true"  name="addMediaRouterButton" native="false" return="android.view.MenuItem" static="false" synchronized="false" visibility="public">
-        <parameter name="menu" type="android.view.Menu"/>
-        <parameter name="id" type="int"/>
-      </method>
-
-      <method abstract="false" deprecated="not deprecated" final="true"  name="addMediaRouterButton" native="false" return="void" static="false" synchronized="false" visibility="public">
-        <parameter name="rButton" type="android.support.v7.app.MediaRouteButton"/>
-      </method>
-
-
-      <method abstract="false" deprecated="not deprecated" final="true"  name="incrementUiCounter" native="false" return="void" static="false" synchronized="false" visibility="public"/>
-
-      <method abstract="false" deprecated="not deprecated" final="true"  name="decrementUiCounter" native="false" return="void" static="false" synchronized="false" visibility="public"/>
-
-      <method abstract="false" deprecated="not deprecated" final="true"  name="reconnectSessionIfPossible" native="false" return="void" static="false" synchronized="false" visibility="public"/>
-
-      <method abstract="false" deprecated="not deprecated" final="true"  name="reconnectSessionIfPossible" native="false" return="void" static="false" synchronized="false" visibility="public">
-        <parameter name="p0" type="int"/>
-      </method>
-
-      <method abstract="false" deprecated="not deprecated" final="true"  name="getRemoteMediaUrl" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public"/>
-
-      <method abstract="false" deprecated="not deprecated" final="true"  name="isRemoteMediaPlaying" native="false" return="boolean" static="false" synchronized="false" visibility="public"/>
-
-      <method abstract="false" deprecated="not deprecated" final="true"  name="isRemoteMediaPaused" native="false" return="boolean" static="false" synchronized="false" visibility="public"/>
-
-      <method abstract="false" deprecated="not deprecated" final="true"  name="isRemoteMediaLoaded" native="false" return="boolean" static="false" synchronized="false" visibility="public"/>
-
-      <method abstract="false" deprecated="not deprecated" final="true"  name="isConnected" native="false" return="boolean" static="false" synchronized="false" visibility="public"/>
-
-      <method abstract="false" deprecated="not deprecated" final="true"  name="addDeviceListener" native="false" return="void" static="false" synchronized="false" visibility="public">
-        <parameter name="listener" type="com.longtailvideo.jwplayer.cast.CastEvents.DeviceListener"/>
-      </method>
-
-      <method abstract="false" deprecated="not deprecated" final="true"  name="removeDeviceListener" native="false" return="void" static="false" synchronized="false" visibility="public">
-        <parameter name="listener" type="com.longtailvideo.jwplayer.cast.CastEvents.DeviceListener"/>
-      </method>
-
-
-      <method abstract="false" deprecated="not deprecated" final="true"  name="addApplicationListener" native="false" return="void" static="false" synchronized="false" visibility="public">
-        <parameter name="listener" type="com.longtailvideo.jwplayer.cast.CastEvents.ApplicationListener"/>
-      </method>
-
-      <method abstract="false" deprecated="not deprecated" final="true"  name="removeApplicationListener" native="false" return="void" static="false" synchronized="false" visibility="public">
-        <parameter name="listener" type="com.longtailvideo.jwplayer.cast.CastEvents.ApplicationListener"/>
-      </method>
-
-      <method abstract="false" deprecated="not deprecated" final="true"  name="addErrorListener" native="false" return="void" static="false" synchronized="false" visibility="public">
-        <parameter name="listener" type="com.longtailvideo.jwplayer.cast.CastEvents.ErrorListener"/>
-      </method>
-
-      <method abstract="false" deprecated="not deprecated" final="true"  name="removeErrorListener" native="false" return="void" static="false" synchronized="false" visibility="public">
-        <parameter name="listener" type="com.longtailvideo.jwplayer.cast.CastEvents.ErrorListener"/>
-      </method>
-
-
-      <method abstract="false" deprecated="not deprecated" final="true"  name="addPlayerListener" native="false" return="void" static="false" synchronized="false" visibility="public">
-        <parameter name="listener" type="com.longtailvideo.jwplayer.cast.CastEvents.PlayerListener"/>
-      </method>
-
-      <method abstract="false" deprecated="not deprecated" final="true"  name="removePlayerListener" native="false" return="void" static="false" synchronized="false" visibility="public">
-        <parameter name="listener" type="com.longtailvideo.jwplayer.cast.CastEvents.PlayerListener"/>
-      </method>
-
-      <method abstract="false" deprecated="not deprecated" final="true"  name="addConnectionListener" native="false" return="void" static="false" synchronized="false" visibility="public">
-        <parameter name="listener" type="com.longtailvideo.jwplayer.cast.CastEvents.ConnectionListener"/>
-      </method>
-
-      <method abstract="false" deprecated="not deprecated" final="true"  name="removeConnectionListener" native="false" return="void" static="false" synchronized="false" visibility="public">
-        <parameter name="listener" type="com.longtailvideo.jwplayer.cast.CastEvents.ConnectionListener"/>
-      </method>
-      <method abstract="false" deprecated="not deprecated" final="true"  name="disconnect" native="false" return="void" static="false" synchronized="false" visibility="public"/>
-    </class>
-  </add-node>-->
+	<add-node path="/api/package[@name='com.longtailvideo.jwplayer.cast']">
+		<class abstract="false" deprecated="not deprecated" final="true" name="CastManager" static="false" visibility="public" extends="java.lang.Object">
+			<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="com.longtailvideo.jwplayer.cast.CastManager" static="true" synchronized="false" visibility="public" />
+			<method abstract="false" deprecated="not deprecated" final="false" name="initialize" native="false" return="void" static="true" synchronized="false" visibility="public">
+				<parameter name="context" type="android.content.Context" />
+			</method>
+			<method abstract="false" deprecated="not deprecated" final="false" name="initialize" native="false" return="void" static="true" synchronized="false" visibility="public">
+				<parameter name="context" type="android.content.Context" />
+				<parameter name="name" type="java.lang.String" />
+			</method>
+			<method abstract="false" deprecated="not deprecated" final="false" name="isInitialized" native="false" return="boolean" static="true" synchronized="false" visibility="public" />
+			<method abstract="false" deprecated="not deprecated" final="true" name="addMediaRouterButton" native="false" return="android.view.MenuItem" static="false" synchronized="false" visibility="public">
+				<parameter name="menu" type="android.view.Menu" />
+				<parameter name="id" type="int" />
+			</method>
+			<method abstract="false" deprecated="not deprecated" final="true" name="addMediaRouterButton" native="false" return="void" static="false" synchronized="false" visibility="public">
+				<parameter name="rButton" type="android.support.v7.app.MediaRouteButton" />
+			</method>
+			<method abstract="false" deprecated="not deprecated" final="true" name="incrementUiCounter" native="false" return="void" static="false" synchronized="false" visibility="public" />
+			<method abstract="false" deprecated="not deprecated" final="true" name="decrementUiCounter" native="false" return="void" static="false" synchronized="false" visibility="public" />
+			<method abstract="false" deprecated="not deprecated" final="true" name="reconnectSessionIfPossible" native="false" return="void" static="false" synchronized="false" visibility="public" />
+			<method abstract="false" deprecated="not deprecated" final="true" name="reconnectSessionIfPossible" native="false" return="void" static="false" synchronized="false" visibility="public">
+				<parameter name="p0" type="int" />
+			</method>
+			<method abstract="false" deprecated="not deprecated" final="true" name="getRemoteMediaUrl" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public" />
+			<method abstract="false" deprecated="not deprecated" final="true" name="isRemoteMediaPlaying" native="false" return="boolean" static="false" synchronized="false" visibility="public" />
+			<method abstract="false" deprecated="not deprecated" final="true" name="isRemoteMediaPaused" native="false" return="boolean" static="false" synchronized="false" visibility="public" />
+			<method abstract="false" deprecated="not deprecated" final="true" name="isRemoteMediaLoaded" native="false" return="boolean" static="false" synchronized="false" visibility="public" />
+			<method abstract="false" deprecated="not deprecated" final="true" name="isConnected" native="false" return="boolean" static="false" synchronized="false" visibility="public" />
+			<method abstract="false" deprecated="not deprecated" final="true" name="addDeviceListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+				<parameter name="listener" type="com.longtailvideo.jwplayer.cast.CastEvents.DeviceListener" />
+			</method>
+			<method abstract="false" deprecated="not deprecated" final="true" name="removeDeviceListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+				<parameter name="listener" type="com.longtailvideo.jwplayer.cast.CastEvents.DeviceListener" />
+			</method>
+			<method abstract="false" deprecated="not deprecated" final="true" name="addApplicationListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+				<parameter name="listener" type="com.longtailvideo.jwplayer.cast.CastEvents.ApplicationListener" />
+			</method>
+			<method abstract="false" deprecated="not deprecated" final="true" name="removeApplicationListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+				<parameter name="listener" type="com.longtailvideo.jwplayer.cast.CastEvents.ApplicationListener" />
+			</method>
+			<method abstract="false" deprecated="not deprecated" final="true" name="addErrorListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+				<parameter name="listener" type="com.longtailvideo.jwplayer.cast.CastEvents.ErrorListener" />
+			</method>
+			<method abstract="false" deprecated="not deprecated" final="true" name="removeErrorListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+				<parameter name="listener" type="com.longtailvideo.jwplayer.cast.CastEvents.ErrorListener" />
+			</method>
+			<method abstract="false" deprecated="not deprecated" final="true" name="addPlayerListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+				<parameter name="listener" type="com.longtailvideo.jwplayer.cast.CastEvents.PlayerListener" />
+			</method>
+			<method abstract="false" deprecated="not deprecated" final="true" name="removePlayerListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+				<parameter name="listener" type="com.longtailvideo.jwplayer.cast.CastEvents.PlayerListener" />
+			</method>
+			<method abstract="false" deprecated="not deprecated" final="true" name="addConnectionListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+				<parameter name="listener" type="com.longtailvideo.jwplayer.cast.CastEvents.ConnectionListener" />
+			</method>
+			<method abstract="false" deprecated="not deprecated" final="true" name="removeConnectionListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+				<parameter name="listener" type="com.longtailvideo.jwplayer.cast.CastEvents.ConnectionListener" />
+			</method>
+			<method abstract="false" deprecated="not deprecated" final="true" name="disconnect" native="false" return="void" static="false" synchronized="false" visibility="public" />
+		</class>
+	</add-node>
 </metadata>
