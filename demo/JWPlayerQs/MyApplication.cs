@@ -13,11 +13,17 @@ using Com.Longtailvideo.Jwplayer.Cast;
 
 namespace JWPlayerQs
 {
-   // [Application(SupportsRtl =true,AllowBackup =true,Theme = "@style/MyTheme",Label ="Appp")]
-   // [MetaData("JW_LICENSE_KEY", Value = "upydWUEcObEN/YtMOAIsdPoVbf6vbabPu2vPiw==")]
+   [Application]
     public class MyApplication : Application
     {
-       
+        public MyApplication():base()
+        {
+
+        }
+        public MyApplication(IntPtr javaReference, JniHandleOwnership transfer) : base(javaReference,transfer)
+        {
+
+        }
         public override void OnCreate()
         { 
             base.OnCreate();

@@ -43,8 +43,7 @@ namespace JWPlayerQs
 
             // Load a media source
             PlaylistItem pi = new PlaylistItem("http://playertest.longtailvideo.com/adaptive/bipbop/gear4/prog_index.m3u8");
-            mPlayerView.Load(pi);
-            CastManager.Initialize(this);
+            mPlayerView.Load(pi); 
             mCastManager = CastManager.Instance;
             mCastManager.AddDeviceListener(new DeviceListener());
             mCastManager.AddPlayerListener(new PlayerListener());

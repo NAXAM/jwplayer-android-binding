@@ -43,17 +43,17 @@
     <WarningLevel>4</WarningLevel>
     <AndroidManagedSymbols>true</AndroidManagedSymbols>
     <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
-    <AndroidSupportedAbis />
+    <AndroidSupportedAbis>armeabi;armeabi-v7a;x86;x86_64;arm64-v8a</AndroidSupportedAbis>
     <JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
     <EnableProguard>true</EnableProguard>
     <AndroidEnableMultiDex>true</AndroidEnableMultiDex>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Naxam.CastCompanionLibrary.Droid, Version=2.9.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Naxam.CastCompanionLibrary.Droid.2.7.4.3\lib\MonoAndroid10\Naxam.CastCompanionLibrary.Droid.dll</HintPath>
+      <HintPath>..\..\packages\Naxam.CastCompanionLibrary.Droid.2.9.1\lib\MonoAndroid10\Naxam.CastCompanionLibrary.Droid.dll</HintPath>
     </Reference>
-    <Reference Include="Naxam.JWPlayerChromeCast.Droid, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Naxam.JWPlayerChromeCast.Droid.2.7.4.3\lib\MonoAndroid10\Naxam.JWPlayerChromeCast.Droid.dll</HintPath>
+    <Reference Include="Naxam.JWPlayerChromeCast.Droid, Version=2.7.5.23, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Naxam.JWPlayerChromeCast.Droid.2.7.5.23\lib\MonoAndroid10\Naxam.JWPlayerChromeCast.Droid.dll</HintPath>
     </Reference>
     <Reference Include="Naxam.JWPlayerCommon.Droid, Version=2.7.4.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Naxam.JWPlayerCommon.Droid.2.7.4.3\lib\MonoAndroid10\Naxam.JWPlayerCommon.Droid.dll</HintPath>
