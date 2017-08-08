@@ -151,14 +151,13 @@
   </add-node>-->
 
 
-  <!--<add-node path="/api/package[@name='com.longtailvideo.jwplayer.cast']">
+  <add-node path="/api/package[@name='com.longtailvideo.jwplayer.cast']">
     <class abstract="false" deprecated="not deprecated" final="true" name="CastManager" static="false" visibility="public" extends="java.lang.Object" >
-      --><!--<constructor deprecated="not deprecated" final="false" name="CastManager" static="false" type="com.longtailvideo.jwplayer.cast.CastManager" visibility="private"  >
+      <constructor deprecated="not deprecated" final="false" name="CastManager" static="false" type="com.longtailvideo.jwplayer.cast.CastManager" visibility="private"  >
         <parameter name="p1" type="com.longtailvideo.jwplayer.cast.b"/>
-      </constructor>--><!--
+      </constructor>
 
       <method abstract="false" deprecated="not deprecated" final="false"  name="getInstance" native="false" return="com.longtailvideo.jwplayer.cast.CastManager" static="true" synchronized="false" visibility="public"/>
-
 
       <method abstract="false" deprecated="not deprecated" final="false"  name="initialize" native="false" return="void" static="true" synchronized="false" visibility="public">
         <parameter name="context" type="android.content.Context"/>
@@ -177,8 +176,7 @@
       <method abstract="false" deprecated="not deprecated" final="true"  name="addMediaRouterButton" native="false" return="void" static="false" synchronized="false" visibility="public">
         <parameter name="rButton" type="android.support.v7.app.MediaRouteButton"/>
       </method>
-
-
+      
       <method abstract="false" deprecated="not deprecated" final="true"  name="incrementUiCounter" native="false" return="void" static="false" synchronized="false" visibility="public"/>
 
       <method abstract="false" deprecated="not deprecated" final="true"  name="decrementUiCounter" native="false" return="void" static="false" synchronized="false" visibility="public"/>
@@ -242,5 +240,5 @@
       </method>
       <method abstract="false" deprecated="not deprecated" final="true"  name="disconnect" native="false" return="void" static="false" synchronized="false" visibility="public"/>
     </class>
-  </add-node>-->
+  </add-node>
 </metadata>
